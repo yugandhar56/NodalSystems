@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/nd_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:background="@drawable/button_background"
+            android:text="Login"/>
+<!--
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="No account yet? Create one"
+            android:gravity="center"
+            android:textSize="16dip"/>-->
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_10dp">
+
+        &lt;!&ndash; <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#372c24" android:text="Email"/>&ndash;&gt;
+
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/et_username"
+            android:hint="UserName"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/edit_text_size"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:drawablePadding="20dip"
+            android:inputType="textEmailAddress"/>
+
+        &lt;!&ndash; Password Label &ndash;&gt;
+
+
+        &lt;!&ndash;<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#372c24" android:text="Password"/>&ndash;&gt;
+
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dip"
+            android:id="@+id/et_password"
+            android:hint="password"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/edit_text_size"
+            android:layout_marginTop="20dip"
+            android:drawablePadding="20dip"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dip"/>
+
+        &lt;!&ndash; Login button &ndash;&gt;
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/forgot_password"
+             android:text="ForgotPassword"
+             android:textColor="@color/white"
+             android:layout_marginTop="@dimen/margin_15dp"
+             android:layout_marginBottom="@dimen/margin_15dp"
+             android:textSize="18sp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnLogin"
+            android:textSize="20sp"
+            android:layout_margin="10dip"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+        </ScrollView>-->

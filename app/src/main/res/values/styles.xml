@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- From: file:/F:/svn/UIControls/lib/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="body_scrollView" type="id"/>
+    <item name="header_scrollView" type="id"/>
+    <item name="key" type="id"/>
+    <item name="view_mode" type="id"/>
+    <!-- From: file:/F:/svn/UIControls/lib/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <!--<string name="app_name">UIControls</string>-->
+    <string name="mandatory_msg">%1$s is required. </string>
+    <string name="selected_count">%1$s selected</string>
+    <!-- From: file:/F:/svn/UIControls/lib/src/main/res/values/styles.xml -->
+    <eat-comment/>
+        <!--<item name="android:typeface">monospace</item>-->
+        <!-- Customize your theme here. -->
+   <!-- <style name="CLLetterIconView">
+        <item name="color_one">@color/orange_color</item>
+        <item name="color_two">@color/lite_blue_accetcolor</item>
+        <item name="color_three">@color/yellow_primary_color</item>
+        <item name="color_four">@color/teal_primary_color</item>
+        <item name="color_five">@color/red_primary_color</item>
+        <item name="text_color">@color/white</item>
+        <item name="text_size">20</item>
+        <item name="view_width">120</item>
+        <item name="view_height">120</item>
+        &lt;!&ndash;  <item name="text_gravity">center</item>
+          <item name="text_style">italic</item>&ndash;&gt;
+
+    </style>
+    <style name="CustomLetterIconTheme">
+        <item name="customLetterIconStyle">@style/Custom_LetterIcon_Style</item>
+        <item name="android:width">120dp</item>
+        <item name="android:height">120dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="Custom_LetterIcon_Style" parent="CLLetterIconView">
+        <item name="color_two">@color/green_primary</item>
+        &lt;!&ndash;    <item name="android:textColor">@color/orange_accert</item>
+            <item name="android:textSize">25sp</item>&ndash;&gt;
+
+    </style>
+    <style name="textViewLabel" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">@dimen/tor_text_size</item>
+        <item name="android:padding">0dp</item>
+
+    </style>
+    <style name="textViewLabelValue" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tor_text_size</item>
+        <item name="android:padding">0dp</item>
+
+    </style>-->
+</resources>

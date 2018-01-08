@@ -3,8 +3,10 @@ package com.nodel.nodalsytems.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.ActionBar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.nodel.nodalsytems.R;
 import com.nodel.nodalsytems.ui.view.CustomersListActivty;
@@ -43,9 +46,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        Button orderButoon= (Button) findViewById(R.id.btn_order);
-        Button billingButoon= (Button) findViewById(R.id.btn_billing);
-        Button returnButoon= (Button) findViewById(R.id.btn_return);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbarLayout.setTitle(getResources().getString(R.string.app_name));
+        LinearLayout orderButoon= (LinearLayout) findViewById(R.id.btn_order);
+        LinearLayout billingButoon= (LinearLayout) findViewById(R.id.btn_billing);
+        LinearLayout returnButoon= (LinearLayout) findViewById(R.id.btn_return);
         orderButoon.setOnClickListener(this);
         billingButoon.setOnClickListener(this);
         returnButoon.setOnClickListener(this);

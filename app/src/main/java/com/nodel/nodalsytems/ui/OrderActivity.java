@@ -40,6 +40,7 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         CustomerDTO customerDTO= (CustomerDTO) getIntent().getExtras().get("customer");
         getSupportActionBar().setTitle(customerDTO.getCustomerName());

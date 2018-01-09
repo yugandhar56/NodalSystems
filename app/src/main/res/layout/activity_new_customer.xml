@@ -8,6 +8,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/gray_100"
         android:layout_margin="@dimen/margin_5dp" >
 
         <!-- Email Label -->
@@ -40,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Order Item"
-            android:textColor="@color/light_gray"
+            android:textSize="16sp"
+            android:textColor="@color/gray_medium"
             android:layout_marginTop="@dimen/margin_5dp"
             android:layout_marginBottom="@dimen/margin_5dp"/>
         <Spinner
@@ -99,8 +101,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
             android:layout_marginLeft="@dimen/margin_30dp"
+            android:textColor="@color/white"
             android:layout_marginRight="@dimen/margin_30dp"
             android:background="@drawable/button_background"
             android:text="Add Customer"/>

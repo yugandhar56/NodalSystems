@@ -62,5 +62,7 @@
     <color name="white">#ffffff</color>
     <color name="yellow_primary_color">#ffeb3b</color>
 
+    <color name="gray_100">#EEEEEE</color>
+
 
 </resources>

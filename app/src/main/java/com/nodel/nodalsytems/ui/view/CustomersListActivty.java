@@ -1,10 +1,13 @@
 package com.nodel.nodalsytems.ui.view;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.nodel.nodalsytems.R;
@@ -27,6 +30,19 @@ public class CustomersListActivty extends AppCompatActivity  {
         customerRecyclerView.setAdapter(new CustomerAdapter(this,getData()));
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         customerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               Intent clIntent=new Intent(CustomersListActivty.this,NewCustomerActivity.class);
+                startActivity(clIntent);
+            }
+        });
 ///*
         customerRecyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
@@ -43,6 +59,16 @@ public class CustomersListActivty extends AppCompatActivity  {
 //        customerAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId()==android.R.id.home)
+        {
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     private ArrayList<CustomerDTO> getData()
     {
